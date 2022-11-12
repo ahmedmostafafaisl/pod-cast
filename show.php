@@ -1,5 +1,13 @@
 <?php
-require_once("includes/header2.php")
+require_once("includes/header2.php");
+require_once('classes/Auth.php');
+require_once("helpers/isAdmin.php");
+
+$admin = is_admin();
+
+if (!$admin) {
+    header('location:Home.php');
+}
 ?>
 
 

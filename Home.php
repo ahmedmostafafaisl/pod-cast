@@ -42,13 +42,21 @@
         <nav class="nav">
             <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">DA
                         Broadcast</span> </a>
-                <div class="nav_list"> <a href="Deney.php" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i>
-                        <span class="nav_name">إسلاميات</span> </a> <a href="sport.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">رياضة</span> </a> <a href="Lang.php" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i>
-                        <span class="nav_name">لغات</span> </a> <a href="Historic.php" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">تاريخ</span> </a> <a href="Tech.php" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">تقنيات</span>
+                <div class="nav_list"> <a href="Deney.php" class="nav_link active"> <i
+                            class='bx bx-grid-alt nav_icon'></i>
+                        <span class="nav_name">إسلاميات</span> </a> <a href="sport.php" class="nav_link"> <i
+                            class='bx bx-user nav_icon'></i> <span class="nav_name">رياضة</span> </a> <a href="Lang.php"
+                        class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i>
+                        <span class="nav_name">لغات</span> </a> <a href="Historic.php" class="nav_link"> <i
+                            class='bx bx-bookmark nav_icon'></i> <span class="nav_name">تاريخ</span> </a> <a
+                        href="Tech.php" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span
+                            class="nav_name">تقنيات</span>
                     </a>
-                    <a href="Hasry.php" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">حصريات</span> </a>
+                    <a href="Hasry.php" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span
+                            class="nav_name">حصريات</span> </a>
                 </div>
-            </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+            </div> <a href="login.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                    class="nav_name">SignOut</span> </a>
         </nav>
     </div>
 

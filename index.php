@@ -1,5 +1,13 @@
 <?php
-require_once("includes/header2.php")
+require_once("includes/header2.php");
+require_once('classes/Auth.php');
+require_once("helpers/isAdmin.php");
+
+$admin = is_admin();
+if (!$admin) {
+    header('location:Home.php');
+}
+
 ?>
 <div id="login">
 
@@ -21,7 +29,8 @@ require_once("includes/header2.php")
                         <div class="form-group">
                             <label for="category" class="text-info">Category</label><br>
                             <!-- <input required type="text" name="category" id="category" class="form-control" min=1> -->
-                            <select name="category" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <select name="category" class="form-select form-select-lg mb-3"
+                                aria-label=".form-select-lg example">
                                 <option selected value='اسلاميات'> اسلاميات</option>
                                 <option value="لغات"> لغات </option>
                                 <option value="رياضة">رياضة </option>
@@ -45,7 +54,8 @@ require_once("includes/header2.php")
 
 
                         <div class="form-group">
-                            <input type="submit" value="Add Product" name="add" class="btn btn-success" data-bs-toggle="modal">
+                            <input type="submit" value="Add Product" name="add" class="btn btn-success"
+                                data-bs-toggle="modal">
                         </div>
 
                     </form>
