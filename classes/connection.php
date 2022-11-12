@@ -1,9 +1,9 @@
 <?php
 
- require_once ('DB.php');
- $DATABASE='mysql';
- $DATABASE_HOST='localhost';
- $DATABASE_NAME='php_project';
- $DATABASE_USERNAME='root';
- $DATABASE_PASSWORD='';
-DB::connect( $DATABASE ,$DATABASE_HOST,$DATABASE_NAME,$DATABASE_USERNAME,$DATABASE_PASSWORD);
+require_once('DB.php');
+$DATABASE = 'mysql';
+$DATABASE_HOST = 'localhost';
+$DATABASE_NAME = 'crud';
+$DATABASE_USERNAME = 'root';
+$DATABASE_PASSWORD = '1234';
+DB::connect($DATABASE, $DATABASE_HOST, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);

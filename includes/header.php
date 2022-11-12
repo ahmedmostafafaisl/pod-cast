@@ -1,105 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>KOPPEE - Coffee Shop HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <!-- <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
-    <link href= "assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- <link href="assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> -->
-  
-
-    <link href="assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="assets/css/style.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <!-- date picker css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-    <link rel="stylesheet"   href=assets/login.css" >
-
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="assets/css/homestyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-
- <!-- Navbar Start -->
- <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">muzicana</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-expand-lg ">
+        <div class="container mb-1 ">
+            <a class="navbar-brand" href="home.php">Pod <i class="bi bi-music-note-list"></i>cast</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
 
-                
-
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav ms-auto">
 
                    
+                    <li class="nav-item">
+                        <a class="pages nav-link fas fa-home mr-3" href="#"> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pages nav-link fa-brands fa-product-hunt" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pages nav-link fa-brands fa-salesforce" href="#">Sales</a>
+                    </li>
+                    // cart  
+                    <li class="nav-item">
+                         
+                        <a class="pages nav-link fa fa-shopping-cart" href="#"></a>
+                    </li>
 
-                <?php if((Auth::check() && Auth::user()['role'] != 'admin')){?>?
 
+                    </li>
+                    <li class="nav-item active">
+                        <a class="pages nav-link fa-solid fa-right-to-bracket" href="#">Logout <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul> -->
 
-                    <a href="index.php" class="nav-item nav-link ">Home</a>
-                    <a href="product.php" class="nav-item nav-link">Products</a>
-                    <a href="myorders.php" class="nav-item nav-link">My Orders</a>
-                   <!-- <a href="logout.php" class="nav-item nav-link">Logout</a>-->
-
-               <?php }
-                    else if($admin) {?>?
-
-                    <a href="index.html" class="nav-item nav-link ">Home</a>
-
-                    <a href="checks.php" class="nav-item nav-link">Checks</a>
-                    <a href="orders.php" class="nav-item nav-link">Orders</a>
-                    <a href="users.php" class="nav-item nav-link">Users</a>
-                    <a href="admin/products/index.php" class="nav-item nav-link">Products</a>
-                    <a href="admin/products/add.php" class="nav-item nav-link">Add Product</a>
-                    <a href="manualorders.php" class="nav-item nav-link">Manual Orders</a>
-                   <!-- <a href="logout.php" class="nav-item nav-link">Logout</a>-->
-
-            <?php }
-           
-                    
-                if(Auth::check()){
-                    
-                    ?>
-                    <a href="logout.php" class="nav-item nav-link">Logout</a>
-
-                    <?php } else {?>
-                        <a href="login.php" class="nav-item nav-link">Login</a>
-                        <a href="addUser.php" class="nav-item nav-link">Register</a>
-
-                <?php } ?>
-
-                </div>
             </div>
-        </nav>
-</div>
-    <!-- Navbar End -->
-
-    <!-- require -->
-    
- 
+        </div>
+    </nav>
